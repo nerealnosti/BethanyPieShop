@@ -1,0 +1,16 @@
+﻿@model Pie
+
+    <h2>@Model.Category?.CategoryName</h2>
+
+    <div class="card">
+        <img class="card-img-top" src="@Model.ImageUrl" alt="Pie picture" />
+        <div class="card-body">
+            <h3 class="card-title">@Model.Price</h3>
+            <h3 class="card-title">
+                <a href="#">@Model.Name</a>   
+            </h3>
+
+            <h4 class="card-subtitle">@Model.ShortDescription</h4>
+            <p class="card-text">@Model.LongDescription</p>
+        </div>
+    </div>
